@@ -14,6 +14,15 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+    <!-- Unlimited google photos storage -->
+    <SwitchPreference
+        android:key="use_photos_spoof"
+        android:icon="@drawable/ic_backup"
+        android:title="@string/use_photos_spoof_title"
+        android:summary="@string/use_photos_spoof_summary"
+        android:defaultValue="true" />
+
+    <!-- Secure window Flags-->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
