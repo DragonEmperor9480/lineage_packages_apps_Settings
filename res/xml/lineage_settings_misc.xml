@@ -14,18 +14,21 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-    <!-- Unlimited google photos storage -->
-    <SwitchPreference
-        android:key="use_photos_spoof"
-        android:icon="@drawable/ic_backup"
-        android:title="@string/use_photos_spoof_title"
-        android:summary="@string/use_photos_spoof_summary"
-        android:defaultValue="true" />
-
-    <!-- Secure window Flags-->
+  
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:lineage="http://schemas.android.com/apk/res-auto"
+    android:title="@string/misc_title">
+
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="misc_illustration"
+        lineage:lottie_rawRes="@raw/misc_illustration" />
+
+    <PreferenceCategory
+            android:title="@string/dev_category">
+    <!-- Secure window Flags-->
 
     <lineageos.preference.LineageSecureSettingSwitchPreference
             android:key="window_ignore_secure"
@@ -33,4 +36,19 @@
             android:title="@string/ignore_window_secure_title"
             android:summary="@string/ignore_window_secure_summary"
             android:defaultValue="false"/>
+
+    </PreferenceCategory>
+
+ <PreferenceCategory
+            android:title="@string/spoofing_category">
+    
+    <!-- Unlimited google photos storage -->
+    <lineageos.preference.LineageSecureSettingSwitchPreference
+        android:key="persist.sys.pixelprops.gphotos"
+        android:icon="@drawable/ic_backup"
+        android:title="@string/use_photos_spoof_title"
+        android:summary="@string/use_photos_spoof_summary"
+        android:defaultValue="true" />
+
+    </PreferenceCategory>
 </PreferenceScreen>
