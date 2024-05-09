@@ -30,7 +30,7 @@
             android:title="@string/dev_category">
     <!-- Secure window Flags-->
 
-    <lineageos.preference.LineageSecureSettingSwitchPreference
+    <com.android.settings.preferences.SecureSettingSwitchPreference
             android:key="window_ignore_secure"
             android:icon="@drawable/ic_unlock_alert"
             android:title="@string/ignore_window_secure_title"
@@ -43,7 +43,7 @@
             android:title="@string/spoofing_category">
     
     <!-- Unlimited google photos storage -->
-    <lineageos.preference.LineageSecureSettingSwitchPreference
+    <com.android.settings.preferences.SecureSettingSwitchPreference
         android:key="persist.sys.pixelprops.gphotos"
         android:icon="@drawable/ic_backup"
         android:title="@string/use_photos_spoof_title"
